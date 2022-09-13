@@ -31,6 +31,7 @@ workflows:
   test_build:
     jobs:
       - test
-      - build:
-          requires: # sequence the build job to run after test
-          - test
+      - build
+      #:
+          #requires: # sequence the build job to run after test
+          #- test
