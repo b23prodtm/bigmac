@@ -30,7 +30,7 @@ jobs: # a basic unit of work in a run
 workflows:
   test_build:
     jobs:
-      #- test
+      - test
       - build
       #:
           #requires: # sequence the build job to run after test
